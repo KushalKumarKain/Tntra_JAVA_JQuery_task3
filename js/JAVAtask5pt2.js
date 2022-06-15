@@ -106,58 +106,59 @@ $(document).ready(function(){
 
 
 
-$('#submitbtn').on('click', function() {
-  var first_name = $('#f_name').val();
-  var last_name = $('#l_name').val();
-  var addline1 = $('#addressline1').val();
-  var addline2 = $('#addressline2').val();
-  var city_name = $('#city').val();
-  var state_name = $('#state').val();
-  var zip_add = $('#postal').val();
-  var phone_1 = $('#nume').val();
-  var email = $('#email').val();
-  var choose = $('#dropdown').val();
-  var feedback_1 = $('#feedback').val();
-  var suggestions_1 = $('#suggestions').val();
-  var gender_1 = $('input[name = gender]').val();
-  var count = $('#myTable tr').length;
+$('#form').submit(function(event) {
+  event.preventDefault();
+  let first_name = $('#f_name').val();
+  let last_name = $('#l_name').val();
+  let addline1 = $('#addressline1').val();
+  let addline2 = $('#addressline2').val();
+  let city_name = $('#city').val();
+  let state_name = $('#state').val();
+  let zip_add = $('#postal').val();
+  let phone_1 = $('#nume').val();
+  let email = $('#email').val();
+  let choose = $('#dropdown').val();
+  let feedback_1 = $('#feedback').val();
+  let suggestions_1 = $('#suggestions').val();
+  let gender_1 = $('input[name = gender]').val();
+  let count = $('#myTable tr').length;
   
   // if(first_name != "" && last_name != "" && addline1 != "" 
   // && addline2 != "" && city_name != "" && state_name != "" 
   // && zip_add != "" && phone_1!= "" && email != "" && email != "" 
   // && choose != "" && feedback_1 != "" && suggestions_1 != "" 
   // && gender_1 != "")
-  if($('#f_name').valid() === true )
-  if($('#_name').valid() === true )
-  if($('#addressline1').valid() === true )
-  if($('#addressline2').valid() === true )
-  if($('#city').valid() === true )
-  if($('#state').valid() === true )
-  if($('#postal').valid() === true )
-  if($('#nume').valid() === true )
-  if($('#email').valid() === true )
-  if($('#dropdown').valid() === true )
-  if($('#feedback').valid() === true )
-  if($('#suggestions').valid() === true )
-  if($('[name=gender]').valid() === true )
-
+  if($('#f_name').valid() &&
+  $('#_name').valid() &&
+  $('#addressline1').valid() &&
+  $('#addressline2').valid() &&
+  $('#city').valid() &&
+  $('#state').valid() &&
+  $('#postal').valid() &&
+  $('#nume').valid() &&
+  $('#email').valid() &&
+  $('#dropdown').valid() &&
+  $('#feedback').valid() &&
+  $('#suggestions').valid() &&
+  $('input[name=gender]:checked') != undefined )
 
   {
-  $('#myTable tbody').append('<tr class="child"><td>' + count 
-  + '</td><td>' + first_name + '</td><td>' + last_name + '</td><td>' 
-  + addline1 + '</td><td>' + addline2 + '</td><td>' + city_name + '</td><td>'
-  + state_name + '</td><td>' + zip_add + '</td><td>' + phone_1 + '</td><td>' 
-  + email +'</td><td>' + choose + '</td><td>' + feedback_1 + '</td><td>' 
-  + suggestions_1 + '</td><td>' + gender_1 + '</td></tr>');
+  window.localStorage.setItem("f_name",$('$f_anme').val());
+  window.localStorage.setItem("l_name",$('$l_anme').val());
+  window.localStorage.setItem("adressline1",$('$adressline1').val());
+  window.localStorage.setItem("adressline2",$('$adressline2').val());
+  window.localStorage.setItem("city",$('$city').val());
+  window.localStorage.setItem("state",$('$state').val());
+  window.localStorage.setItem("postal",$('$postal').val());
+  window.localStorage.setItem("nume",$('$nume').val());
+  window.localStorage.setItem("email",$('$email').val());
+  window.localStorage.setItem("dropdown",$('$dropdown').val());
+  window.localStorage.setItem("feedback",$('$feedback').val());
+  window.localStorage.setItem("suggestions",$('$suggestions').val());
+  window.localStorage.setItem("gender",$('input[type=radio][name=gender]:checked').val());
+    location.href="../html/JAVA_task5pt2.html"
   }
 
   });
 
-  $('#myTable tbody tr').each(function(i){           
-   $($(this).find('td')[0]).html(i+1);          
-  });
-
-  $("#form").submit(function(event){
-    event.preventDefault();
-  })
-
+  
