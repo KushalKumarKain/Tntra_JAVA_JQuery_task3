@@ -1,0 +1,303 @@
+form{
+  padding-top:30px;
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: white;
+}
+
+body{
+  background-color:lightblue;
+  padding-left:300px;
+  padding-right:250px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#f_name-error,#nume-error,#email-error,#l_name-error,#last_name-error,#addressline1-error,
+#addressline2-error,#city-error,#state-error,#postal-error,#feedback-error,#suggestions-error,#gender-error,#dropdown-error{
+  font-size: 16px;
+  color: red;
+}
+
+.name:after {
+  content:" *";
+  color: red;
+}
+.firstname{
+  position: relative;
+  top:-15px;
+  line-height:30px;
+  text-transform: capitalize;
+  font-size: 16px;
+  width: 404px;
+}
+.lastname{
+  position: absolute;
+  left:770px;
+  top: 221px;
+  line-height:30px;
+  text-transform: capitalize;
+  padding:0px;
+  font-size: 16px;
+  width: 440px;
+}
+#f_name-error{
+	position: absolute;
+	width: 139px;
+  margin-right: 9px;
+  margin-top: 0px;
+  bottom: 146px;
+  margin-bottom: 0px;
+  top: 281px;
+  height: 18px;
+  left: 330px;
+}
+.firstlabel{
+  position: relative;
+  text-transform: capitalize;
+  font-size:14px;
+  top:-15px;
+}
+.lastlabel{
+  position: absolute;
+  text-transform: capitalize;
+  font-size:14px;
+  left:772px;
+  top:256px;
+}
+#l_name-error{
+	position: absolute;
+	width: 139px;
+  top: 280px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  left: 775px;
+}
+
+.address{
+  margin-top:80px ;
+}
+.address:after{
+  content:" *";
+  color: red;
+} 
+#addressline1-error{
+  position: absolute;
+  top: 470px;
+  left: 331px;
+  margin: 0px;
+}
+#addressline2-error{
+  position: absolute;
+  top: 553px;
+  left: 331px;
+  margin: 0px;
+}
+.city{
+  position: absolute;
+  padding: 0px;
+  top: 654px;
+  width: 30px;
+  bottom: 0px;
+  text-transform: capitalize;
+  font-size: 15px;
+  left: 332px;
+}
+#city-error{
+  position: absolute;
+  width: 150px;
+  top: 667px;
+  left: 328px;
+}
+.rajya{
+  position: relative;
+  left:425px;
+  top:-35px;
+  line-height:30px;
+  text-transform: capitalize;
+  font-size: 16px;
+  width: 440px;
+}
+.shaher{
+  position: relative;
+  line-height:30px;
+  text-transform: capitalize;
+  font-size:14px;
+  top:0px;
+  width: 400px;
+  margin-top: 23px;
+}
+.state{
+  position: absolute;
+  text-transform: capitalize;
+  font-size:14px;
+  left:757px;
+  top:655px;
+}
+#state-error{
+  position: absolute;
+  left: 755px;
+  top: 669px;
+  margin: 0px;
+}
+.streetadd{
+  position: absolute;
+  font-size: 15px;
+  left: 328px;
+  top: 448px;
+}
+.streetadd2{
+  position: absolute;
+  font-size: 15px;
+  left: 328px;
+  top: 538px;
+}
+.postal{
+  position: absolute;
+  font-size: 15px;
+  left: 334px;
+  top: 745px;
+}
+.zipcode{
+  position: relative;
+  line-height:30px;
+  text-transform: capitalize;
+  font-size: 16px;
+  width: 400px;
+}
+#postal-error{
+  position: absolute;
+  left: 330px;
+  top: 760px;
+}
+::placeholder{
+    color: gray;
+}
+
+
+.number{
+  height: 30px;
+  width: 200px;
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+.number:after {
+	content:" *";
+	color: red;
+}
+#nume-error{
+  position: absolute;
+  top: 885px;
+  left: 330px;
+}
+
+.email{
+  height: 25px;
+  margin-bottom: 5px;
+  width: 73px;
+}
+.emaillabel{
+  position: relative;
+  font-size:15px;
+  left:0px;
+  top:-20px;
+}
+#email-error{
+  position: absolute;
+  top: 988px;
+  left: 330px;
+}
+
+
+#dropdown-error{
+  position: absolute;
+  top: 1120px;
+  left: 330px;
+}
+
+
+#feedback-error{
+  position: absolute;
+  top: 1415px;
+  left: 330px;
+}
+
+
+#suggestions-error{
+  position: absolute;
+  top: 1700px;
+  left: 330px;
+}
+
+
+.check{
+  width: 344px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  height: 26px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+.gender{
+	font-size: larger;
+}
+.option{
+	width: 150px;
+	font-size: 17px;
+}
+#gender-error{
+  position: absolute;
+  top: 1825px;
+  left: 330px;
+  margin: 0px;
+}
+
+
+table,th,td{
+  border: 1px solid;
+  border-collapse: collapse;
+  border-color:lightgray;
+}
+table{
+  margin-bottom: 45px;
+  width: 98%;
+  font-size: 20px;
+}
+
+
+p{
+  font-size: 20px;
+}
+
+
+.legend{
+  width: 350px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+button{
+  background-color:green;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 1px;
+  font-size:15px;
+  padding:14px 110px;
+  cursor:pointer;
+}
+button:hover{
+  background-color: blue;
+}
+
+
+#myTable{
+  position: absolute;
+  left: 14px;
+  top: 2146 px;
+  background-color: white;
+  border-width: 15px;
+  border-color: white;
+}

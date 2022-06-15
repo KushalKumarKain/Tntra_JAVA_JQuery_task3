@@ -4,31 +4,25 @@ $(document).ready(function(){
     rules:{
       f_name :{
         required: true,
-        lettersonly : true,
-        min : 3
+        lettersonly : true
       },
       l_name : {
         required : true,
-        lettersonly : true,
-        min : 3
+        lettersonly : true
       },
       addressline1 : {
-        required : true,
-        min : 10
+        required : true
       },
       addressline2 : {
-        required : true,
-        min : 5
+        required : true
       },
       city : {
         required : true,
-        lettersonly : true,
-        min :3
+        lettersonly : true
       },
       state : {
         required : true,
-        lettersonly : true,
-        min : 3
+        lettersonly : true
       },
       postal : {
         required : true,
@@ -47,12 +41,10 @@ $(document).ready(function(){
         required : true
       },
       feedback : {
-        required : true,
-        min : 15
+        required : true
       },
       suggestions : {
-        required : true,
-        min : 15
+        required : true
       },
       gender : {
         required : true
@@ -62,30 +54,25 @@ $(document).ready(function(){
       f_name : {
         required : "This is required",
         lettersonly : "Enter only alphabets",
-        min : "First name should be grater than 2 alphabets"
       },
       l_name : {
         required : "This is required",
-        lettersonly : "Enter only alphabets",
-        min : "Last name should be grater than 2 alphabets "
+        lettersonly : "Enter only alphabets"
       },
       addressline1 : {
-        required : "This is required",
-        min : "Address can not be less than 10 characters"
+        required : "This is required"
       },
       addressline2 : {
-        required : "This is required",
-        min : "Address can not be less than 10 characters"
+        required : "This is required"
       },
       city : {
         required : "This is required",
-        lettersonly : "Enter only alphabets",
-        min: "City name cannot be less than 3 characters"
+        lettersonly : "Enter only alphabets"
       },
       state : {
         required : "This is required",
         lettersonly : "Enter only alphabets",
-        min : "State name can not be less than 3 characters"
+
       },
       postal : {
         required : "This is required",
@@ -105,11 +92,9 @@ $(document).ready(function(){
       },
       feedback : {
         required : "This is required",
-        min : "Feedback cannot be less than 15 characters"
       },
       suggestions : {
         required : "This is required",
-        min : "Suggestions cannot be less than 10 characters"
       },
       gender : {
         required : "This is required"
