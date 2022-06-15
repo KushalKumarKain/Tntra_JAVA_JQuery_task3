@@ -1,0 +1,18 @@
+
+body{
+  background-color:lightblue;
+  padding-left:300px;
+  padding-right:250px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+#myTable{
+  position: absolute;
+  left: 14px;
+  top: 2146 px;
+  background-color: white;
+  border-width: 15px;
+  border-color: white;
+}
