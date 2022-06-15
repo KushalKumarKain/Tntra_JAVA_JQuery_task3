@@ -104,8 +104,9 @@ $(document).ready(function(){
   });
 });
 
-$('#submitbtn').on('click', function() {
 
+
+$('#submitbtn').on('click', function() {
   var first_name = $('#f_name').val();
   var last_name = $('#l_name').val();
   var addline1 = $('#addressline1').val();
@@ -121,12 +122,26 @@ $('#submitbtn').on('click', function() {
   var gender_1 = $('input[name = gender]').val();
   var count = $('#myTable tr').length;
   
-  if(first_name != "" && last_name != "" && addline1 != "" 
-  && addline2 != "" && city_name != "" && state_name != "" 
-  && zip_add != "" && phone_1!= "" && email != "" && email != "" 
-  && choose != "" && feedback_1 != "" && suggestions_1 != "" 
-  && gender_1 != "")
-  // if($('#f_name').valid() === true )
+  // if(first_name != "" && last_name != "" && addline1 != "" 
+  // && addline2 != "" && city_name != "" && state_name != "" 
+  // && zip_add != "" && phone_1!= "" && email != "" && email != "" 
+  // && choose != "" && feedback_1 != "" && suggestions_1 != "" 
+  // && gender_1 != "")
+  if($('#f_name').valid() === true )
+  if($('#_name').valid() === true )
+  if($('#addressline1').valid() === true )
+  if($('#addressline2').valid() === true )
+  if($('#city').valid() === true )
+  if($('#state').valid() === true )
+  if($('#postal').valid() === true )
+  if($('#nume').valid() === true )
+  if($('#email').valid() === true )
+  if($('#dropdown').valid() === true )
+  if($('#feedback').valid() === true )
+  if($('#suggestions').valid() === true )
+  if($('[name=gender]').valid() === true )
+
+
   {
   $('#myTable tbody').append('<tr class="child"><td>' + count 
   + '</td><td>' + first_name + '</td><td>' + last_name + '</td><td>' 
@@ -141,3 +156,8 @@ $('#submitbtn').on('click', function() {
   $('#myTable tbody tr').each(function(i){           
    $($(this).find('td')[0]).html(i+1);          
   });
+
+  $("#form").submit(function(event){
+    event.preventDefault();
+  })
+
