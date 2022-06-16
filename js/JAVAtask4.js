@@ -119,7 +119,7 @@ $('#submitbtn').on('click', function() {
   var choose = $('#dropdown').val();
   var feedback_1 = $('#feedback').val();
   var suggestions_1 = $('#suggestions').val();
-  var gender_1 = $('input[name = gender]').val();
+  var gender_1 = $('input[name = gender]:checked').val();
   var count = $('#myTable tr').length;
   
   if(first_name != "" && last_name != "" && addline1 != "" 
