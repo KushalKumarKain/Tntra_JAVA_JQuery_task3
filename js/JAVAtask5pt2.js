@@ -19,7 +19,8 @@ function loadData() {
   + localStorage.suggestion1 + '</td><td>'
   + localStorage.recommend1 + '</td><td>'
   + localStorage.gender1 + 
-  '</td><td><a href="javascript:void(0);" class="rem">Remove</a></td></tr>');
+  '</td><td><a href="javascript:void(0);" class="rem">Remove</a></td>' + 
+  '<td><a href="" class="edit">Edit</a></td></tr>');
 
 $(document).on('click','.rem',function(){
 $(this).parent().parent().remove();
@@ -27,4 +28,12 @@ $('#myTable tbody tr').each(function(i){
   $($(this).find('td')[0]).html(i+1);          
  });
 });
+$(document).on('click','.edit',function(event){
+  event.preventDefault();
+  var url = window.history.go(-1);
+  $(".edit").attr('href',url);
+  $('#myTable tbody tr').each(function(i){           
+    $($(this).find('td')[0]).html(i+1);          
+   });
+  });
 }
