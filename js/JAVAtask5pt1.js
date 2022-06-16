@@ -102,11 +102,24 @@ $(document).ready(function(){
         
       }
     });
-  
-    $("#submitbtn").on('click', function() {
-      localStorage.name = $('#f_name').val();
+    $("#submitbtn").on('click', function(event) {
+      localStorage.count = $('#myTable tr').length;
+      localStorage.fname = $('#f_name').val();
       localStorage.lname = $('#l_name').val();
-      console.log("data saved");
+      localStorage.add1 = $('#addressline1').val();
+      localStorage.add2 = $('#addressline2').val();
+      localStorage.city1 = $('#city').val();
+      localStorage.state1 = $('#state').val();
+      localStorage.postal1 = $('#postal').val();
+      localStorage.phone = $('#nume').val();
+      localStorage.mail = $('#email').val();
+      localStorage.choose = $('#dropdown').val();
+      localStorage.feedback1 = $('#feedback').val();
+      localStorage.suggestion1 = $('#suggestions').val();
+      localStorage.recommend1 = $('#recommend').val();
+      localStorage.gender1 = $('input[name="gender"]:checked').val();
+
+
     });
   
 //   $('#form').submit(function(event){
