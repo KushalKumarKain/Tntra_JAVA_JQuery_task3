@@ -103,44 +103,48 @@ $(document).ready(function(){
       }
     });
   
-
+    $("#submitbtn").on('click', function() {
+      localStorage.name = $('#f_name').val();
+      localStorage.lname = $('#l_name').val();
+      console.log("data saved");
+    });
   
-  $('#form').submit(function(event) {
-    event.preventDefault();
+//   $('#form').submit(function(event){
+//     event.preventDefault();
     
-  if
-    (
-      $('#f_name').valid() &&
-      $('#_name').valid() &&
-      $('#addressline1').valid() &&
-      $('#addressline2').valid() &&
-      $('#city').valid() &&
-      $('#state').valid() &&
-      $('#postal').valid() &&
-      $('#nume').valid() &&
-      $('#email').valid() &&
-      $('#dropdown').valid() &&
-      $('#feedback').valid() &&
-      $('#suggestions').valid() &&
-      $('input[name=gender]:checked') != undefined
-    )
+//   if
+//     (
+//       $('#f_name').valid() &&
+//       $('#_name').valid() &&
+//       $('#addressline1').valid() &&
+//       $('#addressline2').valid() &&
+//       $('#city').valid() &&
+//       $('#state').valid() &&
+//       $('#postal').valid() &&
+//       $('#nume').valid() &&
+//       $('#email').valid() &&
+//       $('#dropdown').valid() &&
+//       $('#feedback').valid() &&
+//       $('#suggestions').valid() &&
+//       $('input[name=gender]:checked') != undefined
+//     )
   
-  {
-    window.localStorage.setItem("f_name",$('$f_name').val());
-    window.localStorage.setItem("l_name",$('$l_name').val());
-    window.localStorage.setItem("adressline1",$('$adressline1').val());
-    window.localStorage.setItem("adressline2",$('$adressline2').val());
-    window.localStorage.setItem("city",$('$city').val());
-    window.localStorage.setItem("state",$('$state').val());
-    window.localStorage.setItem("postal",$('$postal').val());
-    window.localStorage.setItem("nume",$('$nume').val());
-    window.localStorage.setItem("email",$('$email').val());
-    window.localStorage.setItem("dropdown",$('$dropdown').val());
-    window.localStorage.setItem("feedback",$('$feedback').val());
-    window.localStorage.setItem("suggestions",$('$suggestions').val());
-    window.localStorage.setItem("gender",$('input[type=radio][name=gender]:checked').val());
-      window.location.href="../html/JAVA_task5pt2.html"
-  }
+//   {
+//     window.localStorage.setItem("f_name",$('$f_name').val());
+//     window.localStorage.setItem("l_name",$('$l_name').val());
+//     window.localStorage.setItem("adressline1",$('$adressline1').val());
+//     window.localStorage.setItem("adressline2",$('$adressline2').val());
+//     window.localStorage.setItem("city",$('$city').val());
+//     window.localStorage.setItem("state",$('$state').val());
+//     window.localStorage.setItem("postal",$('$postal').val());
+//     window.localStorage.setItem("nume",$('$nume').val());
+//     window.localStorage.setItem("email",$('$email').val());
+//     window.localStorage.setItem("dropdown",$('$dropdown').val());
+//     window.localStorage.setItem("feedback",$('$feedback').val());
+//     window.localStorage.setItem("suggestions",$('$suggestions').val());
+//     window.localStorage.setItem("gender",$('input[type=radio][name=gender]:checked').val());
+//       window.location.href="../html/JAVA_task5pt2.html"
+//   }
   
-});
+// });
 });
