@@ -97,9 +97,7 @@ $(document).ready(function(){
       },
       gender : {
         required : "This is required"
-      }
-
-      
+      }      
     }
   });
 });
@@ -119,36 +117,22 @@ $('#submitbtn').on('click', function() {
   var choose = $('#dropdown').val();
   var feedback_1 = $('#feedback').val();
   var suggestions_1 = $('#suggestions').val();
+  var recommended = $('#recommend').val();
   var gender_1 = $('input[name = gender]:checked').val();
   var count = $('#myTable tr').length;
   
   if(first_name != "" && last_name != "" && addline1 != "" 
   && addline2 != "" && city_name != "" && state_name != "" 
   && zip_add != "" && phone_1!= "" && email != "" && email != "" 
-  && choose != "" && feedback_1 != "" && suggestions_1 != "" 
+  && choose != "" && recommended != "" && feedback_1 != "" && suggestions_1 != "" 
   && gender_1 != "")
-  // if($('#f_name').valid() === true )
-  // if($('#_name').valid() === true )
-  // if($('#addressline1').valid() === true )
-  // if($('#addressline2').valid() === true )
-  // if($('#city').valid() === true )
-  // if($('#state').valid() === true )
-  // if($('#postal').valid() === true )
-  // if($('#nume').valid() === true )
-  // if($('#email').valid() === true )
-  // if($('#dropdown').valid() === true )
-  // if($('#feedback').valid() === true )
-  // if($('#suggestions').valid() === true )
-  // if($('[name=gender]').valid() === true )
-
-
   {
   $('#myTable tbody').append('<tr class="child"><td>' + count 
   + '</td><td>' + first_name + '</td><td>' + last_name + '</td><td>' 
   + addline1 + '</td><td>' + addline2 + '</td><td>' + city_name + '</td><td>'
   + state_name + '</td><td>' + zip_add + '</td><td>' + phone_1 + '</td><td>' 
   + email +'</td><td>' + choose + '</td><td>' + feedback_1 + '</td><td>' 
-  + suggestions_1 + '</td><td>' + gender_1 + '</td></tr>');
+  + suggestions_1 + '</td><td>' + recommended + '</td><td>'+ gender_1 + '</td></tr>');
   }
 
   });
