@@ -122,24 +122,24 @@ $('#submitbtn').on('click', function() {
   var gender_1 = $('input[name = gender]').val();
   var count = $('#myTable tr').length;
   
-  // if(first_name != "" && last_name != "" && addline1 != "" 
-  // && addline2 != "" && city_name != "" && state_name != "" 
-  // && zip_add != "" && phone_1!= "" && email != "" && email != "" 
-  // && choose != "" && feedback_1 != "" && suggestions_1 != "" 
-  // && gender_1 != "")
-  if($('#f_name').valid() === true )
-  if($('#_name').valid() === true )
-  if($('#addressline1').valid() === true )
-  if($('#addressline2').valid() === true )
-  if($('#city').valid() === true )
-  if($('#state').valid() === true )
-  if($('#postal').valid() === true )
-  if($('#nume').valid() === true )
-  if($('#email').valid() === true )
-  if($('#dropdown').valid() === true )
-  if($('#feedback').valid() === true )
-  if($('#suggestions').valid() === true )
-  if($('[name=gender]').valid() === true )
+  if(first_name != "" && last_name != "" && addline1 != "" 
+  && addline2 != "" && city_name != "" && state_name != "" 
+  && zip_add != "" && phone_1!= "" && email != "" && email != "" 
+  && choose != "" && feedback_1 != "" && suggestions_1 != "" 
+  && gender_1 != "")
+  // if($('#f_name').valid() === true )
+  // if($('#_name').valid() === true )
+  // if($('#addressline1').valid() === true )
+  // if($('#addressline2').valid() === true )
+  // if($('#city').valid() === true )
+  // if($('#state').valid() === true )
+  // if($('#postal').valid() === true )
+  // if($('#nume').valid() === true )
+  // if($('#email').valid() === true )
+  // if($('#dropdown').valid() === true )
+  // if($('#feedback').valid() === true )
+  // if($('#suggestions').valid() === true )
+  // if($('[name=gender]').valid() === true )
 
 
   {
